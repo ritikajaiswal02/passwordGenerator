@@ -24,22 +24,22 @@ function App() {
 
   return (
     <>
-      <div className='h-screen w-screen bg-[#0a0a0a] flex justify-center items-center'>
-        <div className='h-[50%] w-[90%]  bg-[#c8c3c36d] rounded-4xl flex flex-col items-center justify-center md:w-[50%]'>
-          <div className='flex flex-wrap justify-center mr-7 ml-7'>
-            <input type="text" className='h-15 bg-amber-50 rounded-2xl mt-5 pl-3 pr-3 md:mt-0 md:w-75' value={password}/>
-            <button className='h-15 mt-10 bg-blue-600 p-4 text-white font-bold rounded-xl md:mt-0'>Copy</button>
+      <div className='h-screen w-full bg-[#0a0a0a] flex justify-center items-center p-4'>
+        <div className='w-full h-100 md:h-80  m-20 md:m-40 lg:m-50 xl:m-120 bg-[rgba(200,195,195,0.43)] rounded-3xl p-15 flex flex-col items-center'>
+          <div className='w-full flex flex-col md:flex-row justify-center items-center gap-4 mb-6'>
+            <input type="text" className=' h-12 rounded-xl px-4 text-black font-semibold bg-white w-full' value={password}/>
+            <button className='h-12 bg-blue-600 px-6 text-white font-bold rounded-xl'>Copy</button>
           </div>
-          <div className='text-white mt-10 md:mt-25 flex gap-5 justify-center flex-col md:flex-row'>
-            <div className='flex justify-center gap-2'>
+          <div className='text-white flex flex-col  gap-6 w-full items-center'>
+            <div className='flex flex-col items-center md:mt-8'>
               <input type="range" min={8} max={30} value={length} onChange={(e)=> setLength(Number(e.target.value))}/>
               <label>Length({length})</label>
             </div>
-            <div className='text-[16px] flex justify-center'>
+            <div className='flex flex-col items-center md:flex-row md:w-full md:justify-center md:mt-5'>
               <input type="checkbox" name="number" id="num" />
-              <label className='mr-7' htmlFor='num'>Numbers</label>
+              <label className='mb-7 md:mb-0 md:mr-40' htmlFor='num'>Numbers</label>
               <input type="checkbox" name="char" id="char" />
-              <label htmlFor='char'>Character</label>
+              <label htmlFor='char' className='flex items-center gap-2'>Character</label>
             </div>
           </div>
         </div>
