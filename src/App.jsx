@@ -36,7 +36,7 @@ function App() {
   return (
     <>
       <div className='h-screen w-full bg-[#0a0a0a] flex justify-center items-center p-4'>
-        <div className='w-full h-100 md:h-80  m-10 md:m-40 lg:m-50 xl:m-120 bg-[rgba(200,195,195,0.43)] rounded-3xl p-15 flex flex-col items-center'>
+        <div className='w-full h-100 md:h-80  m-0 md:m-40 lg:m-50 xl:m-120 bg-[rgba(200,195,195,0.43)] rounded-3xl p-15 flex flex-col items-center'>
           <div className='w-full flex flex-col md:flex-row justify-center items-center gap-4 mb-6'>
             <input type="text" className=' h-12 rounded-xl px-4 text-black font-semibold bg-white w-full' value={password} ref={inputref} readOnly/>
             <button className='h-12 bg-blue-600 px-6 text-white font-bold hover:bg-blue-700 rounded-xl' onClick={copyPassword}>Copy</button>
